@@ -1,0 +1,33 @@
+nav {
+  height: 120px;
+  background-color: #4056A1;
+  color: #ffffff;
+  display: flex;
+  padding: 1.5em;
+
+}
+nav .writeTweet {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+}
+
+nav #tweeterLogo {
+  font-family: "Bungee", "sans-serif";
+  flex-grow: 1;
+}
+nav #inBetween {
+  flex-grow: 6;
+}
+nav #newTweet {
+  flex-grow: 1;
+}
+
+.largeText {
+  font-size: large;
+}
+
+#navBarDownArror {
+  align-self: center;
+  padding-top: 0.2em;
+}
