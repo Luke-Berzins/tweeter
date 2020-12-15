@@ -6,20 +6,20 @@ nav {
   padding: 1.5em;
 
 }
-nav .writeTweet {
+.writeTweet {
   display: flex;
   flex-grow: 0;
   flex-direction: column;
 }
 
-nav #tweeterLogo {
+#tweeterLogo {
   font-family: "Bungee", "sans-serif";
   flex-grow: 1;
 }
-nav #inBetween {
+#inBetween {
   flex-grow: 6;
 }
-nav #newTweet {
+#newTweet {
   flex-grow: 1;
 }
 
