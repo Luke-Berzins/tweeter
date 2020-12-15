@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="utf-8">
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -14,27 +15,80 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span id="tweeterLogo">tweeter</span>
+
       <span id="inBetween"></span>
+
       <div class="writeTweet">
       <span id="newTweet"><strong>Write</strong> a new tweet</span><img id="navBarDownArror" src="./images/down-arrows.png">
       </div>
     </nav>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-    <p>Test</p>
+    <header>
+      <div class="profile">
+          <img src="/images/profile-hex.png"> 
+          <h2><strong>Skiddly</strong> Skatzafrax </h2>
+      </div>
+  </header>
 
+    <!-- Page-specific (main) content here -->
+    <div class="container">
+
+      <main class="postPanel">
+
+        <section class="new-tweet">
+      
+          <form action="/tweets" method="POST">
+
+            
+           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+
+              <hr class="lineBreak">
+
+              <div class="tweeting">
+               
+                <button id="tweetButton" type="submit">Tweet</button>
+                
+                <output name="counter" class="counter" for="tweet-text">140</output>
+             
+                
+              </div>
+             
+                 
+           </form>
+          
+         </section>
+
+
+
+
+
+
+
+
+
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+      <p>Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+
+      <p>Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.</p>
+    </main>
+    </div>
   </body>
 </html>
