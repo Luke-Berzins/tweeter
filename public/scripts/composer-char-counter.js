@@ -1,0 +1,26 @@
+$(document).ready(function() {
+  $("#tweet-text").on('click', function() {
+
+    console.log(this); //The this keyword is a reference to the button
+  });
+  $("#tweet-text").on('click', () => {
+
+    console.log(this); //The this keyword here refers to something else!
+  });
+  
+ 
+  $("#tweet-text").keydown(function() {
+    if (event.keyCode == 13) {
+      event.preventDefault();
+    }
+    let maxLength= 140;
+    let textlen = maxLength - $(this).val().length;
+    $($( ".tweeting" ).children(".counter")).text(textlen);
+    if (textlen < 0) {
+      $( ".tweeting" ).children(".counter").addClass("over-limit");
+    } else {
+      $( ".tweeting" ).children(".counter").removeClass("over-limit");
+    }
+  });
+  
+});
