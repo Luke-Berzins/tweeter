@@ -1,0 +1,43 @@
+.tweets-body {
+  display: flex;
+  flex-direction: column;
+  border-style: groove;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+.tweets-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+.tweets-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: auto;
+  padding-bottom: 3%;
+}
+.tweet-buttons{
+  color: #4056A1;
+}
+#tweet-photo {
+  max-width: 25%;
+  height: auto;
+}
+.temp {
+  display: flex;
+}
+
+.username { 
+  align-self: center;
+  padding-bottom: 2%;
+}
+.end-element {
+  align-self: center;
+  display: none;
+}
+
+.mouse-on-tweet {
+  background-color: #f5e1e1;
+  box-shadow: 5px 10px;
+}

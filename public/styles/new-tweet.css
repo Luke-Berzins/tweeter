@@ -2,9 +2,9 @@
 .new-tweet {
   display: flex;
   justify-content: center;
-  background-color: #cacccc;
+  background-color: #ececec;
   flex-direction: column;
-  border-radius: 25px;
+  padding-bottom: 5%;
 }
 
 .tweeting{
@@ -18,7 +18,7 @@
 }
 
 .lineBreak {
-  width: 95%;
+  width: 100%;
   border: 1px solid rgb(58, 55, 55);
 }
 
@@ -27,6 +27,7 @@
   font-family: "Bungee", "sans-serif";
   color: red;
 }
+
 
 #tweetButton  {
   margin-left:0.5em;
@@ -40,11 +41,8 @@
   width: 90%;
   margin: 0.1em;
   margin-left: 1em;
-  background-color: rgb(201, 201, 201);
   border: 0;
 }
 
-#formLabel {
-  border: 10em;
-}
+
 

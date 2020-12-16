@@ -22,14 +22,27 @@ body {
   font-family: "Source Sans Pro", "sans-serif";
 }
 
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.container {
+
+
+.page-content-holder {
   display: flex;
   justify-content: center;
-  background-color:  #ececec;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5em;
+  width: 90%;
+  background-color: #eaeed2;
+  border-radius: 25px;
+  padding: 2%;
+  
 }
 
 .postPanel {

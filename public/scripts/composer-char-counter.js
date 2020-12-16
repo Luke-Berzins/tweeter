@@ -3,11 +3,15 @@ $(document).ready(function() {
 
     console.log(this); //The this keyword is a reference to the button
   });
-  $("#tweet-text").on('click', () => {
-
-    console.log(this); //The this keyword here refers to something else!
-  });
   
+
+  $(".tweets-body").hover(function() {
+    $(this).toggleClass("mouse-on-tweet")
+    $(".end-element").toggle("end-element");
+  })
+
+
+
  
   $("#tweet-text").keydown(function() {
     if (event.keyCode == 13) {
