@@ -1,10 +1,6 @@
 $(document).ready(function() {
-  $("#tweet-text").on('click', function() {
-
-    console.log(this); //The this keyword is a reference to the button
-  });
   
-
+  
   $(".tweets-body").hover(function() {
     $(this).toggleClass("mouse-on-tweet")
     $(".end-element").toggle("end-element");
@@ -13,13 +9,14 @@ $(document).ready(function() {
 
 
  
-  $("#tweet-text").keydown(function() {
+  $("#tweet-text").keyup(function() {
     if (event.keyCode == 13) {
       event.preventDefault();
     }
     let maxLength= 140;
+    console.log($(this).val().length)
     let textlen = maxLength - $(this).val().length;
-    $($( ".tweeting" ).children(".counter")).text(textlen);
+    $( ".tweeting" ).children(".counter").text(textlen);
     if (textlen < 0) {
       $( ".tweeting" ).children(".counter").addClass("over-limit");
     } else {

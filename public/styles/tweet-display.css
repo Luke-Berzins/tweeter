@@ -4,12 +4,14 @@
   border-style: solid;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 5%;
   
 }
 .tweets-header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 .tweets-footer {
   display: flex;
@@ -24,13 +26,13 @@
   max-width: 25%;
   height: auto;
 }
-.temp {
+.left-name {
   display: flex;
+  justify-content: space-around;
 }
 
 .username { 
   align-self: center;
-  padding-bottom: 2%;
 }
 .end-element {
   align-self: center;
@@ -40,4 +42,8 @@
 .mouse-on-tweet {
   background-color: #f5e1e1;
   box-shadow: 5px 10px;  
+}
+
+#age-of-tweet {
+  display: inline;
 }
