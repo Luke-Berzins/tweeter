@@ -4,7 +4,11 @@ nav {
   color: #ffffff;
   display: flex;
   padding: 1.5em;
-
+}
+.scrollable-bar {
+  position: sticky;
+  width: 100%;
+  top: 0px;
 }
 .writeTweet {
   display: flex;
