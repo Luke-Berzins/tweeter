@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+  $(".writeTweet").click(function () {
+    $("#new-tweet-form").slideToggle("fast");
+    $("#tweet-text").focus()
+  });
   
   $("#tweet-text").keyup(function() {
     if (event.keyCode == 13) {
@@ -13,5 +18,4 @@ $(document).ready(function() {
       $( ".tweeting" ).children(".counter").removeClass("over-limit");
     }
   });
-  
 });

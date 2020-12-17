@@ -58,10 +58,11 @@ loadTweets();
 $("#tweet-form").on("submit", function(event) {
   event.preventDefault();
   let tweetContent = $("#tweet-text").val();
-  if (tweetContent.length > 240) {
+  let tweetSize = tweetContent.length;
+  if (tweetSize > 140) {
     $("#size-error").removeClass("error-message");
     $("#size-error").text("Too Long");
-  } else if (tweetContent.length === 0) {
+  } else if (tweetSize === 0) {
     $("#size-error").removeClass("error-message");
     $("#size-error").text("Error no content");
   } else {

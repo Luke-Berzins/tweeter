@@ -5,6 +5,7 @@
   background-color: #ececec;
   flex-direction: column;
   padding-bottom: 5%;
+  display: none;
 }
 
 .tweeting{
@@ -13,7 +14,7 @@
 }
 
 .counter {
-  margin-right:0.5em;
+  margin-right:0.5rem;
   font-family: "Bungee", "sans-serif";
 }
 
@@ -23,7 +24,7 @@
 }
 
 .over-limit {
-  margin-right:0.5em;
+  margin-right:0.5rem;
   font-family: "Bungee", "sans-serif";
   color: red;
 }
@@ -38,8 +39,8 @@
 
 
 #tweetButton  {
-  margin-left:0.5em;
-  margin-bottom:0.5em;
+  margin-left:0.5rem;
+  margin-bottom:0.5rem;
   background-color: #4056A1;
   color: #ececec;
   font-family: "Bungee", "sans-serif";
@@ -48,10 +49,11 @@
 #tweet-text {
   background-color: #ececec;
   width: 90%;
-  margin: 0.1em;
-  margin-left: 1em;
-  border: 0;
+  margin: 0.1rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  resize: none;
 }
-
 
 

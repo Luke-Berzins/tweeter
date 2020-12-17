@@ -27,6 +27,10 @@
   padding-bottom: 3%;
 }
 .tweet-buttons{
+  color: #ececec;
+}
+
+.tweets-body:hover .tweet-buttons{
   color: #4056A1;
 }
 #tweet-photo {
@@ -51,4 +55,8 @@
 
 #age-of-tweet {
   display: inline;
+}
+
+#tweet-content{
+  overflow-wrap: break-word;
 }

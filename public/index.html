@@ -4,6 +4,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -33,31 +34,34 @@
     <div class="scrollable-bar">
     <nav>
       <span id="tweeterLogo">tweeter</span>
-
       <span id="inBetween"></span>
 
       <div class="writeTweet">
-      <span id="newTweet"><strong>Write</strong> a new tweet</span><img id="navBarDownArror" src="./images/down-arrows.png">
+      <span id="newTweet"><strong>Write</strong> a new tweet</span>
+      <button class="btn" id="newBtn"><img id="navBarDownArror" src="./images/down-arrows.png"></button>
       </div>
 
     </nav>
   </div>
+  
+  
+  <div class="account-content">
 
-    <header class="profile user-header">
+
+    <header class="profile user-header" id="account">
       
           <img src="/images/profile-hex.png"> 
-          <h2><strong>Skiddly</strong> Skatzafrax </h2>
+          <span class="name-display"><h2><strong>Neo</strong> TheOne </h2></span>
     
   </header>
 
     <!-- Page-specific (main) content here -->
-  <div>
   <div class="page-content-holder">
     <div class="page-content">
 
       <main class="postPanel">
 
-        <section class="new-tweet">
+        <section id="new-tweet-form" class="new-tweet">
       
           <form id="tweet-form"action="/tweets" method="POST">
 

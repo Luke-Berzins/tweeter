@@ -5,7 +5,7 @@
  */
 html {
   box-sizing: border-box;
-  background-color:  #e9a620;
+  background-color:  #ececec;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -17,8 +17,8 @@ html {
 
 body {
   color: #545149;
-  background-color:  #e9a620;
-  font-size: 24px;
+  background-color:  #ececec;
+  font-size: 18px;
   font-family: "Source Sans Pro", "sans-serif";
 }
 
@@ -37,7 +37,7 @@ body {
 .page-content {
   display: flex;
   justify-content: center;
-  padding-top: 0.5em;
+  padding-top: 0.5rem;
   width: 90%;
   background-color: #ececec;
   border-radius: 25px;
@@ -51,4 +51,38 @@ body {
   background-color: #ececec;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .account-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .page-content-holder {
+    padding-top: 3rem;
+    width: 70%;
+  }
+  #account{
+    margin: 3rem;
+    width: 30%;
+    background-image: none;
+    background-color: #4056A1;
+    border-radius: 25px;
+  }
+
+  .name-display {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  body {
+    color: #545149;
+    background-image: url("../images/christmas-dark.png");
+    background-color:  #e9a620;
+    font-size: 24px;
+    font-family: "Source Sans Pro", "sans-serif";
+  }
+  
 }
