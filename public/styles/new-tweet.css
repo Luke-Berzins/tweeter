@@ -27,6 +27,14 @@
   font-family: "Bungee", "sans-serif";
   color: red;
 }
+.error {
+  display: inline;
+  font-family: "Bungee", "sans-serif";
+  color: red;
+}
+.error-message {
+  display: none;
+}
 
 
 #tweetButton  {

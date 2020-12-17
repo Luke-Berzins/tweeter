@@ -5,7 +5,14 @@
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 5%;
-  
+}
+.tweets-body:hover {
+  background-color: #f5e1e1;
+  box-shadow: 5px 10px;  
+}
+
+.tweets-body:hover .end-element {
+  color: rgb(160, 149, 134);
 }
 .tweets-header {
   display: flex;
@@ -34,14 +41,12 @@
 .username { 
   align-self: center;
 }
-.end-element {
+#handle {
   align-self: center;
-  display: none;
 }
 
-.mouse-on-tweet {
-  background-color: #f5e1e1;
-  box-shadow: 5px 10px;  
+.end-element {
+  color:  #ececec;
 }
 
 #age-of-tweet {
