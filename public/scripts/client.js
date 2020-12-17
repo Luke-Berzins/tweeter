@@ -1,4 +1,10 @@
 $(document).ready(function() {
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
   
 const renderTweets = function(tweets) {
   for (const twit of tweets) {
@@ -8,9 +14,9 @@ const renderTweets = function(tweets) {
 
 const createTweetElement = function(tweet) {
   const userImage = tweet["user"]["avatars"]
-  const tweetUser = tweet["user"]["name"]
-  const tweetHandle = tweet["user"]["handle"]
-  const tweetContent = tweet["content"]["text"]
+  const tweetUser = escape(tweet["user"]["name"])
+  const tweetHandle = escape(tweet["user"]["handle"])
+  const tweetContent = escape(tweet["content"]["text"]);
   const tweetAge = new Date(tweet["created_at"]).toLocaleString();
   let $tweet = `
   <article class="tweets-body" >
@@ -47,11 +53,19 @@ $.ajax('tweets', {
   });
 };
 loadTweets();
+
+
 $("#tweet-form").on("submit", function(event) {
   event.preventDefault();
-  const tweetContent = $("#tweet-text").val();
-  if (0 < tweetContent.length && tweetContent.length <= 140) {
-    $("#size-error").addClass("error-message")
+  let tweetContent = $("#tweet-text").val();
+  if (tweetContent.length > 240) {
+    $("#size-error").removeClass("error-message");
+    $("#size-error").text("Too Long");
+  } else if (tweetContent.length === 0) {
+    $("#size-error").removeClass("error-message");
+    $("#size-error").text("Error no content");
+  } else {
+    $("#size-error").addClass("error-message");
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -61,15 +75,6 @@ $("#tweet-form").on("submit", function(event) {
       loadTweets();
     });
     loadTweets();
-  } else if (tweetContent.length > 240) {
-    $("#size-error").removeClass("error-message");
-    $("#size-error").text("Too Long");
-  } else {
-    $("#size-error").removeClass("error-message");
-    $("#size-error").text("Error no content");
-  }
+  } 
 })
-
-
-  
 });
