@@ -4,7 +4,7 @@ Tweeter is a simple, single-page Twitter clone. I tried to style it to look nice
 
 !["Desktop"](https://github.com/Luke-Berzins/tweeter/blob/master/public/images/desktop.png?raw=true)
 !["Tablet"](https://github.com/Luke-Berzins/tweeter/blob/master/public/images/tablet.png?raw=true)
-!["Phone"](https://github.com/Luke-Berzins/tweeter/blob/master/public/images/mobile.png?raw=true
+!["Phone"](https://github.com/Luke-Berzins/tweeter/blob/master/public/images/mobile.png?raw=true)
 
 ## Getting Started
 
