@@ -28,15 +28,16 @@
   font-family: "Bungee", "sans-serif";
   color: red;
 }
+
 .error {
   display: inline;
   font-family: "Bungee", "sans-serif";
   color: red;
 }
+
 .error-message {
   display: none;
 }
-
 
 #tweetButton  {
   margin-left:0.5rem;
@@ -45,7 +46,6 @@
   color: #ececec;
   font-family: "Bungee", "sans-serif";
 }
-
 #tweet-text {
   background-color: #ececec;
   width: 90%;

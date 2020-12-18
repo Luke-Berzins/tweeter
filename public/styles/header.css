@@ -2,7 +2,7 @@
   height: 400px;
   width: 100%;
   background-image: url("../images/christmas-dark.png") ;
-  background-color: #e9a620;
+  background-color: none;
 }
 
 .profile {
@@ -10,11 +10,28 @@
   flex-direction: column;
   align-items: center;
   background-image: url("../images/christmas-dark.png") ;
-  background-color:  #e9a620;
+  background-color:  none;
 }
 
 .name-display {
   font-family: "Source Sans Pro", "sans-serif";
   font-weight: 300;
   color : #ececec;
+}
+
+@media (min-width:768px) {
+  .user-header {
+    height: 400px;
+    width: 30%;
+    background-image: url("../images/christmas-dark.png") ;
+    background-color: none;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/christmas-dark.png") ;
+    background-color:  none;
+  }
 }

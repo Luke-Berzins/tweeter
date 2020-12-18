@@ -44,19 +44,23 @@
     </nav>
   </div>
   
-  
+  <!-- Profile -->
   <div class="account-content">
 
 
     <header class="profile user-header" id="account">
       
           <img src="/images/profile-hex.png"> 
-          <span class="name-display"><h2><strong>Neo</strong> TheOne </h2></span>
+          <span class="name-display"><h2><strong>Sally</strong> Suze</h2></span>
     
   </header>
 
     <!-- Page-specific (main) content here -->
+
+
+    <!-- new tweet form (expandable)-->
   <div class="page-content-holder">
+
     <div class="page-content">
 
       <main class="postPanel">
@@ -64,8 +68,7 @@
         <section id="new-tweet-form" class="new-tweet">
       
           <form id="tweet-form"action="/tweets" method="POST">
-
-            
+   
            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
 
               <hr class="lineBreak">
@@ -76,6 +79,7 @@
                 
                 
                   <p id="size-error" class="error error-message">Error</p>
+
                 <output name="counter" class="counter" for="tweet-text">140</output>
                 
               </div>
@@ -85,20 +89,16 @@
           
          </section>
 
+
+         <!-- tweets are displayed below -->
          <section id="tweets-container">
-
+          <!-- Client script fills with tweets from database -->
         </section>
-
-
-
 
 
     </main>
   </div>
 </div>
-
-
-
 
   </body>
 </html>

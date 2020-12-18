@@ -67,7 +67,7 @@ body {
     margin: 3rem;
     width: 30%;
     background-image: none;
-    background-color: #4056A1;
+    background-color: #8b9acc;
     border-radius: 25px;
   }
 
@@ -80,9 +80,42 @@ body {
   body {
     color: #545149;
     background-image: url("../images/christmas-dark.png");
-    background-color:  #e9a620;
+    background-color:  none;
     font-size: 24px;
     font-family: "Source Sans Pro", "sans-serif";
   }
-  
+
+   
+}
+
+@media (min-width:768px) {
+  .account-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .page-content-holder {
+    padding-top: 3rem;
+    width: 85%;
+  }
+  #account{
+    margin: 3rem;
+    width: 15%;
+    background-image: none;
+    background-color: none;
+    border-radius: 25px;
+  }
+
+  .name-display {
+    width: 100%;
+    text-align: center;
+
+  }
+  body {
+    color: #545149;
+    background-image: url("../images/christmas-dark.png");
+    background-color:   none;
+    font-size: 24px;
+    font-family: "Source Sans Pro", "sans-serif";
+  }
 }
